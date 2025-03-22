@@ -1,0 +1,82 @@
+@import url(reset.css);
+
+* a {
+    color: rgb(42, 184, 223);
+}
+
+h1 {
+    color: #000;
+}
+
+h2 {
+    color: #f03207;
+}
+
+h3 {
+    color: #0cf608;
+}
+
+
+.list {
+    color: #602a93;
+}
+
+#last-link {
+    color: #d0a01d;
+}
+
+.list a {
+    color: #8d105f;
+}
+
+
+.entry p {
+    color: #4a6843;
+}
+
+.population>p {
+    color: #20a646;
+}
+
+.kitchen>p {
+    color: #eb7c0c;
+}
+
+div .climate-paragraph {
+    color: #c4de72;
+}
+
+#title-gallery~.gallery {
+    color: #13e7fa;
+}
+
+#up {
+    color: #eb0c0c;
+}
+
+[class*="tim"] {
+    color: #fff200;
+}
+
+.subtitle-water-transport>h4 {
+    color: #f608c3;
+}
+
+.water-text-stamp,
+.air-stamp {
+    color: #466dab;
+}
+
+#title-kitchen+p {
+    color: #da08f6;
+    background-color: #8d105f;
+}
+
+
+.entry>.mark-entry-title {
+    color: #2ec996;
+}
+
+.total-box+h5 {
+    color: #129a9a;
+}

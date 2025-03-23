@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "SegoeScript";
+  src: url("../fonts/SegoeScript-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/Cocogoose-Classic-ExtraBoldl.woff") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/Cocogoose-Classic-Medium.woff") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

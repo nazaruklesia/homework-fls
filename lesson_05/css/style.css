@@ -1,0 +1,180 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "Circular", sans-serif;
+  background-color: #f1eded;
+  color: #1b1a1a;
+}
+h1 {
+  color: #1b1a1a;
+  font-size: 30px;
+}
+.entry-text p {
+  font-weight: 700;
+}
+.first-block {
+  display: block;
+  width: 300px;
+  margin-right: 150px;
+  background-color: #c6e272;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.first-block h2 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.first-block img {
+  padding-bottom: 20px;
+}
+
+.second-block {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  padding: 10px;
+  background-color: #80d5ef;
+  margin-bottom: 40px;
+  max-width: 500px;
+  max-height: 600px;
+  overflow: auto;
+}
+.second-block h2 {
+  text-align: end;
+  font-style: italic;
+  font-size: 28px;
+}
+.second-block img {
+  padding: 40px;
+}
+.second-block p {
+  padding-bottom: 15px;
+  line-height: 1.8;
+}
+
+.img-block {
+  background-color: #f8cef6;
+  min-width: 600px;
+  min-height: 500px;
+  padding: 50px;
+}
+.img-block h2 {
+  color: #0c33cf;
+  font-weight: 700;
+  font-size: 18px;
+  text-shadow: 5px 5px 2px #f4d032;
+}
+.img-first {
+  padding-left: 30px;
+  margin-bottom: -100px;
+}
+.img-second {
+  padding-left: 230px;
+  margin-bottom: -100px;
+}
+.img-thrid {
+  padding-left: 430px;
+}
+/* /////////////////////// */
+.model {
+  background-color: #231f8b;
+  color: #ffffff;
+}
+.model-container {
+  overflow: hidden;
+  max-width: 1440px;
+  min-height: 800px;
+  padding: 96px 100px 0;
+}
+.main-content {
+  margin-bottom: 70px;
+}
+
+.advantages {
+  color: #5a54f2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+.main-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.main-content-text {
+  font-weight: 450;
+  line-height: 1.4;
+  max-width: 765px;
+}
+.main-content-text p {
+  font-weight: 450;
+}
+.card img,
+.card-title,
+.line {
+  margin-bottom: 20px;
+}
+
+.card-risk,
+.card-compliance,
+.caed-audit {
+  background-color: #fff;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+.card-box {
+  font-size: 0;
+}
+.card {
+  display: inline-block;
+  max-width: 230px;
+  width: 100%;
+  background-color: #fff;
+  padding: 35px 40px;
+  color: #252b42;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.card-sox {
+  background-color: #5a54f2;
+  color: #fff;
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+.card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+  line-height: 1.4;
+}
+.white-description {
+  color: #fff;
+}
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #e74040;
+}
+.line.white-line {
+  background-color: #fff;
+}
+
+.card-risk,
+.card-sox {
+  vertical-align: top;
+}
+.card-compliance,
+.card-audit {
+  margin-top: 50px;
+}

@@ -57,10 +57,19 @@ ul {
   margin-bottom: 0;
 }
 
+.blocl-padding-bottom {
+  padding-bottom: 100px;
+}
+.blocl-padding-bottom h2 {
+  text-align: center;
+  background: linear-gradient(92deg, #c0b7e8 -1.02%, #8176af 36.25%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .hydra-block {
   font-family: "Montserrat", sans-serif;
   background-color: #343045;
-  padding: 100px;
+  padding: 0 100px;
   color: #ffff;
   font-weight: 400;
 }
@@ -114,7 +123,7 @@ ul {
   margin: 0 auto;
   width: 100%;
   max-width: 1440px;
-  padding: 30px 40px;
+  padding-bottom: 100px;
   font-size: 0;
   text-align: center;
   background: url("../img/vector7.svg") 12px 4px/ 100% no-repeat,
@@ -168,4 +177,7 @@ ul {
   max-width: 600px;
   width: 100%;
   padding: 50px 0;
+}
+.box a {
+  font-size: 14px;
 }

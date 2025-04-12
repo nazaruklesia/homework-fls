@@ -1,0 +1,109 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #4f4f4f;
+  background-color: #ffff;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.header {
+  color: #412672;
+  background-color: #e5e5e5;
+  min-height: 50px;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+.section-model-violet {
+  background-color: #412672;
+}
+.section-box {
+  padding: 60px 0 100px;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 263px;
+}
+.title-section-violet {
+  color: #ffff;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+.title-section-violet span {
+  font-weight: 700;
+}
+.list-card {
+  font-size: 0;
+}
+.item-card > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+.item-card {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #ffff;
+  max-width: 387px;
+  min-height: 476px;
+  box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0),
+    0px 246px 98px 0px rgba(0, 0, 0, 0.01),
+    0px 138px 83px 0px rgba(0, 0, 0, 0.05),
+    0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.1);
+}
+.item-card:hover {
+  background: #ffbe48;
+  box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0),
+    0px 246px 98px 0px rgba(0, 0, 0, 0.01),
+    0px 138px 83px 0px rgba(0, 0, 0, 0.05),
+    0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.1);
+}
+.item-card h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+.item-card p {
+  height: 76px;
+  font-size: 16px;
+}
+.item-card a {
+  color: #fe3f3f;
+  font-size: 15px;
+  text-align: end;
+}
+.item-card a:hover {
+  text-decoration: underline;
+}
+.item-card:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.section-model-white {
+  padding-top: 150px;
+  padding-bottom: 140px;
+}
+.title-white-section {
+  color: #412672;
+  font-size: 34px;
+}
+.title-white-section span {
+  font-weight: 700;
+}
+.section-model-white p {
+  color: #412672;
+  font-size: 22px;
+}
+.content-white-section {
+  max-width: 520px;
+}
+.content-white-section > *:not(:last-child),
+.list-white-section > *:not(:last-child) {
+  margin-bottom: 20px;
+}

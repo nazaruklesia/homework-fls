@@ -9,9 +9,10 @@ body {
   font-weight: 400;
 }
 
-.header {
+.header,
+.footer {
   color: #412672;
-  background-color: #e5e5e5;
+  background-color: #ffbe48;
   min-height: 50px;
 }
 .wrapper {
@@ -24,6 +25,9 @@ body {
 }
 .section-box {
   padding: 60px 0 100px;
+}
+.main-title {
+  margin-bottom: 60px;
 }
 .container {
   margin: 0 auto;
@@ -106,4 +110,209 @@ body {
 .content-white-section > *:not(:last-child),
 .list-white-section > *:not(:last-child) {
   margin-bottom: 20px;
+}
+.list-white-section li::before {
+  content: "";
+  width: 29px;
+  height: 29px;
+  background: url("../img/frame.svg") no-repeat;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+/* ///////////////////game///////////////////////// */
+.section-game {
+  padding: 60px 0 60px;
+  background-color: #e5e5e5;
+}
+.container-game {
+  padding: 0 50px;
+  text-transform: capitalize;
+}
+.container-game h2 {
+  font-size: 38px;
+  margin-bottom: 30px;
+  color: #412672;
+  text-align: center;
+}
+.content-game {
+  border: 1px solid #416107;
+}
+.step-start {
+  max-width: 60px;
+  background-color: #416107;
+  color: #f9eee1;
+  text-align: center;
+  padding: 20px 5px;
+}
+
+.content-game div:nth-of-type(even):not(:last-child) {
+  background-color: #412672;
+  color: #ffbe48;
+}
+.content-game div:nth-of-type(odd):not(:first-child) {
+  background-color: #ffbe48;
+  color: #412672;
+}
+[class*="step"]:not(:first-child) {
+  visibility: hidden;
+}
+
+.vertical span {
+  display: block;
+  text-align: center;
+}
+[class*="step"] {
+  text-align: center;
+}
+.content-game > div:hover + div,
+.content-game > div:hover {
+  visibility: visible;
+}
+
+.step1 {
+  max-width: 100px;
+  min-height: 30px;
+  margin-top: -45px;
+  margin-left: 60px;
+}
+.step1:hover .step2 {
+  visibility: visible;
+}
+.step2 {
+  max-width: 30px;
+  max-height: 160px;
+  margin-left: 130px;
+}
+
+.step3 {
+  max-width: 190px;
+  min-height: 20px;
+  margin-left: 130px;
+}
+
+.step4 {
+  max-width: 20px;
+  max-height: 220px;
+  margin-left: 300px;
+}
+.step5 {
+  max-width: 100px;
+  min-height: 20px;
+  margin-left: 300px;
+}
+.step6 {
+  max-width: 15px;
+  max-height: 290px;
+  margin-left: 400px;
+  margin-top: -150px;
+}
+
+.step7 {
+  max-width: 130px;
+  min-height: 30px;
+  margin-left: 415px;
+  margin-top: -154px;
+}
+.step8 {
+  max-width: 15px;
+  max-height: 190px;
+  margin-left: 545px;
+  margin-top: -96px;
+}
+.step9 {
+  max-width: 180px;
+  min-height: 30px;
+  margin-top: -96px;
+  margin-left: 560px;
+}
+.step10 {
+  max-width: 20px;
+  max-height: 210px;
+  margin-left: 720px;
+}
+.step11 {
+  max-width: 150px;
+  min-height: 10px;
+  margin-left: 720px;
+}
+.step-finish {
+  padding: 20px;
+  margin-top: -18px;
+  margin-left: 870px;
+}
+/* //////////////////practice////////////////////// */
+.section-practice {
+  background-color: #9d85c576;
+}
+.container-practice {
+  padding: 0 100px;
+}
+
+.block-nth {
+  padding: 100px 0;
+}
+.block-nth > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.block-nth ul > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.block-nth p:nth-of-type(2n + 3) {
+  color: #ffbe48;
+}
+
+.block-nth ul li:nth-child(4n) {
+  color: #416107;
+  font-weight: 900;
+}
+.block-nth:has(.main-word) li:nth-of-type(even) {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.block-state > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.block-state {
+  padding: 100px 0;
+  display: inline-block;
+}
+.block-state > div {
+  text-align: center;
+  padding: 100px;
+  background-color: #41610764;
+  color: #ffff;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.box-hover:hover {
+  background-color: #416107;
+}
+.box-active:active {
+  background-color: #121707;
+  font-weight: 300;
+}
+.block-state .box-visited a {
+  text-decoration: underline;
+}
+.block-state .box-visited a:visited {
+  color: #412672;
+}
+.block-state .box-visible a:focus-visible {
+  outline: none;
+  box-shadow: none;
+  background-color: #ffbf4855;
+  border: 2px solid #412672;
+  color: #ffbe48;
+  border-radius: 8px;
+  padding: 5px;
+}
+.block-state .box-focus a:focus {
+  outline: none;
+  box-shadow: none;
+  border-radius: 8px;
+  border: 2px dotted;
+  color: #0a0a0a;
+  padding: 10px;
 }

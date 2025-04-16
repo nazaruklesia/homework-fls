@@ -31,7 +31,8 @@ body {
 }
 .container {
   margin: 0 auto;
-  padding: 0 263px;
+  max-width: 1201px;
+  width: 100%;
 }
 .title-section-violet {
   color: #ffff;
@@ -111,14 +112,22 @@ body {
 .list-white-section > *:not(:last-child) {
   margin-bottom: 20px;
 }
+.list-white-section li {
+  padding-left: 46px;
+  text-indent: 0;
+}
+
 .list-white-section li::before {
   content: "";
+  display: inline-block;
   width: 29px;
   height: 29px;
-  background: url("../img/frame.svg") no-repeat;
+  background: url("../img/frame.svg") no-repeat center center;
   vertical-align: middle;
+  margin-left: -46px;
   margin-right: 15px;
 }
+
 /* ///////////////////game///////////////////////// */
 .section-game {
   padding: 60px 0 60px;

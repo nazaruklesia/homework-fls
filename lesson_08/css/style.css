@@ -1,0 +1,68 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+.header,
+.footer {
+  background-color: #182c06b6;
+  color: #dce6d2;
+  padding: 20px;
+}
+
+body {
+  color: #484848;
+  background-color: #1866003b;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+.content {
+  padding: 20px 0;
+}
+.container {
+  max-width: 1512px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 50px;
+  background-color: #18660051;
+}
+.content-box:not(:last-child) {
+  margin-bottom: 30px;
+}
+.content-box {
+  border: 1px solid #dce6d27e;
+  padding: 20px;
+  box-shadow: #182c06b6 0px 0px 3px;
+}
+.text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-img,
+.raster-img {
+  margin-right: 20px;
+}
+
+.logo {
+  max-width: 357px;
+}
+.raster-img.blur-img {
+  filter: blur(2px);
+}
+.notsafari {
+  border: 3px solid #dce6d2;
+}
+
+.img-radius {
+  max-width: 557px;
+  max-height: 459px;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.content-box .raster-img {
+  max-width: 577px;
+}

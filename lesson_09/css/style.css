@@ -3,4 +3,25 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+.description .description__img {
+  background-color: #00b207;
+  border-radius: 50%;
+  padding: 4px;
+}
+.info__button {
+  background-color: #00b207;
+  border-radius: 43px;
+  max-width: 192px;
+}
+.info__button p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffff;
+}
+
+.info__button {
+  padding: 16px 40px;
 }

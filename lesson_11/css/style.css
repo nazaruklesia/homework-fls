@@ -1,0 +1,143 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #eeebeb;
+  font-size: 18px;
+  font-style: normal;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+.header,
+.footer {
+  background-color: #bbdbf8;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.picture-container {
+  background-color: #c3eefc7a;
+  height: 900px;
+}
+.decorations {
+  position: relative;
+}
+.decorations__sun {
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  left: 110px;
+  outline: 2px dotted #f8dc89dc;
+  background-color: #f8dc899d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 15px 20px 90px 30px #ff6b01ba;
+}
+
+.decorations__clouds {
+  top: 130px;
+  left: 170px;
+  width: 350px;
+  height: 20px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 90%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 50%;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 5px 20px 180px 30px #cbf5ffe4;
+}
+
+.decorations__cloud01 {
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 170px;
+  width: 90px;
+  height: 70px;
+  background-color: #fffffff2;
+  border-radius: 40px;
+}
+.decorations__cloud02 {
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 120px;
+  width: 50px;
+  height: 50px;
+  background-color: #fffffff2;
+  border-radius: 50%;
+}
+.decorations__cloud03 {
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 10px;
+  width: 80px;
+  height: 70px;
+  background-color: #fffffff2;
+  border-radius: 80px;
+}
+.decorations__cloud04 {
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 70px;
+  width: 70px;
+  height: 90px;
+  background-color: #fffffff2;
+  border-radius: 50%;
+}
+.decorations__cloud05 {
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  left: 255px;
+  width: 80px;
+  height: 55px;
+  background-color: #fffffff2;
+  border-radius: 50%;
+}
+.decorations__cloud-small {
+  top: 200px;
+  left: 20px;
+  width: 150px;
+  height: 1px;
+  position: relative;
+  background-color: #ffffff04;
+  box-shadow: 5px 20px 180px 30px #1cc5db;
+}
+.decorations__cloud06 {
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 40px;
+  width: 70px;
+  height: 90px;
+  background-color: #fffffff1;
+  border-radius: 50%;
+}
+.decorations__cloud07 {
+  position: absolute;
+  z-index: 1;
+  top: -1px;
+  width: 70px;
+  height: 55px;
+  background-color: #fffffff3;
+  border-radius: 50%;
+}
+.decorations__cloud08 {
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  left: 70px;
+  width: 100px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+}

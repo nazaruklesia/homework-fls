@@ -34,6 +34,7 @@
           </div>
           <div class="plane">
             <div class="plane__nose"></div>
+
             <div class="plane__cockpit"></div>
             <div class="plane__little-window01"></div>
             <div class="plane__little-window02"></div>
@@ -105,10 +106,88 @@
                   <img src="img/plane.svg" alt="plane" />
                 </div>
               </div>
+              <div class="translate__item">
+                transform: rotateX(80deg)
+                <div class="translate__rotatex-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item">
+                transform: rotateY(80deg)
+                <div class="translate__rotatey-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item">
+                transform: rotate(80deg)
+                <div class="translate__rotate-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item">
+                Окрема властивість <br />
+                rotate: 80deg
+                <div class="translate__rotate-new-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item">
+                transform: skew(-20deg, 0deg)
+                <div class="translate__skewx-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item">
+                transform: skew(0deg, -20deg)
+                <div class="translate__skewy-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item translate__item--size">
+                transform: translate(20%, 20%) scale(0.5) rotate(30deg)
+                skew(20deg, 20deg)
+                <div class="translate__matrix-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item translate__item--size">
+                transform-origin: 0 0; transform: rotate(20deg)
+                <div class="translate__origin-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="translate__item translate__item--size">
+                transform-origin: left top; transform: rotate(20deg)
+                <div class="translate__origin-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
             </div>
             <div class="transform-2d__scale"></div>
             <div class="transform-2d__rotate"></div>
             <div class="transform-2d__matrix"></div>
+          </div>
+          <div class="transform-3d">
+            <h2 class="transform-3d__title">3D Трансформації</h2>
+            <p class="transform-3d__text">
+              Крім осі X та Y додається вісь Z. Вісь Z працює лише з perspective
+            </p>
+            <div class="transform-3d__block block-3d">
+              <div class="block-3d__item item-3d">
+                transform: rotateY(180deg)
+                <div class="item-3d__style-shift">
+                  <img src="img/plane.svg" alt="plane" />
+                </div>
+              </div>
+              <div class="banknote-block">
+                <div class="banknote-block__banknote-back">
+                  <img src="img/banknote-back.webp" alt="banknote" />
+                </div>
+                <div class="banknote-block__banknote-front">
+                  <img src="img/banknote-front.webp" alt="banknote" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>

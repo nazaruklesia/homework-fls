@@ -24,7 +24,7 @@ body {
   height: 900px;
 }
 [class*="-container"] {
-  padding: 0 30px;
+  padding: 30px;
   margin: 0 auto;
   width: 100%;
 }
@@ -147,6 +147,34 @@ body {
   border-radius: 50%;
 }
 
+.plane {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  width: 500px;
+  height: 200px;
+  background-color: #c6ba0a;
+  border-radius: 16% 84% 61% 39% / 100% 65% 35% 0%;
+}
+.plane__nose {
+  position: relative;
+  width: 70px;
+  height: 100px;
+  left: -59px;
+  bottom: -100px;
+  border-radius: 100% 0% 0% 100% / 39% 39% 61% 61%;
+  background-color: #3f2bef;
+}
+.plane__nose::after {
+  content: "";
+  position: absolute;
+  left: 33px;
+  top: 2px;
+  border-radius: 41% 59% 23% 77% / 58% 53% 47% 42%;
+  background-color: #3f2bef;
+  width: 66px;
+  height: 100px;
+}
 /* //////////////////////////////////////// */
 .practice-container {
   background-color: #f9f9d5;
@@ -165,6 +193,9 @@ body {
 }
 .translate__item:not(:last-child) {
   margin: 0 20px 20px 0;
+}
+.block-3d__item {
+  margin-bottom: 20px;
 }
 [class*="-shift"] {
   width: 150px;
@@ -192,4 +223,72 @@ body {
 }
 .translate__scale-new-shift:hover {
   scale: 1.2;
+}
+.translate__rotatex-shift:hover {
+  transform: rotateX(80deg);
+}
+.translate__rotatey-shift:hover {
+  transform: rotateY(80deg);
+}
+.translate__rotate-shift:hover {
+  transform: rotate(80deg);
+}
+.translate__rotate-new-shift:hover {
+  rotate: 80deg;
+}
+.translate__skewx-shift:hover {
+  transform: skew(-20deg, 0deg);
+}
+.translate__skewy-shift:hover {
+  transform: skew(0deg, -20deg);
+}
+.translate__item--size {
+  font-size: 12px;
+}
+.translate__matrix-shift:hover {
+  transform: translate(20%, 20%) scale(0.5) rotate(30deg) skew(20deg, 20deg);
+}
+.translate__origin-shift:hover {
+  transform-origin: 0 0;
+  transform: rotate(20deg);
+}
+.translate__origin-shift:hover {
+  transform-origin: left top;
+  transform: rotate(20deg);
+}
+.item-3d {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.block-3d__item {
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+.item-3d__style-shift:hover {
+  transform: rotateY(180deg);
+}
+
+.banknote-block {
+  max-width: 300px;
+  position: relative;
+}
+.banknote-block__banknote-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banknote-block__banknote-front {
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+.banknote-block:hover .banknote-block__banknote-back {
+  transform: rotateX(0deg);
+}
+.banknote-block:hover .banknote-block__banknote-front {
+  transform: rotateX(-180deg);
 }

@@ -1,4 +1,4 @@
-/* *,
+*,
 *::before,
 *::after {
   padding: 0;
@@ -10,7 +10,7 @@
 *::before,
 *::after {
   display: inline-block;
-} */
+}
 a {
   text-decoration: none;
   display: inline-block;

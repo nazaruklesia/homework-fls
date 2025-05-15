@@ -338,6 +338,7 @@ body {
   border-radius: 20px;
   box-shadow: 22px 42px 44px 0px rgb(0, 0, 0, 0.3);
 }
+
 .section-bottom__wrapper-img-bottom::before {
   top: -8%;
   left: 20%;

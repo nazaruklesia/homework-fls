@@ -194,6 +194,7 @@ body {
   position: relative;
   background-color: #ffffff;
   box-shadow: 5px 20px 180px 30px #cbf5ffe4;
+  transition: all 0.4s;
 }
 
 .decorations__cloud01 {
@@ -253,15 +254,14 @@ body {
   height: 30px;
   position: relative;
   background-color: #ffffff04;
+  transition: all 0.6s;
 }
 .decorations:has(.decorations__sun:hover) .decorations__clouds {
   box-shadow: 5px 20px 200px 60px #8dc5f9;
-  transition: all 0.4s;
 }
 
 .decorations:has(.decorations__sun:hover) .decorations__cloud-small {
   box-shadow: 5px 40px 180px 30px #38b0f5;
-  transition: all 0.6s;
 }
 
 .decorations__cloud06 {
@@ -364,6 +364,7 @@ body {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 50px;
   transform: rotate(10deg);
+  transition: all 0.8s;
 }
 .headlights__right {
   display: inline-block;
@@ -375,11 +376,11 @@ body {
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 5px;
   transform: rotate(-10deg);
+  transition: all 0.8s;
 }
 .car:hover .headlights__right,
 .car:hover .headlights__left {
   box-shadow: 0px 0px 5px 10px #ffffff;
-  transition: all 0.8s;
 }
 .car__audi {
   transform: rotateX(20deg);

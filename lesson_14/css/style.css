@@ -23,6 +23,15 @@ body {
 .wrapper > main {
   flex-grow: 1;
 }
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.user-form {
+  max-width: 872px;
+  width: 100%;
+}
 .cart {
   padding: 32px 0;
 }
@@ -37,4 +46,33 @@ body {
 }
 label {
   display: block;
+}
+.user-form input {
+  font-size: 16px;
+  padding: 14px 16px 14px;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+
+.billing__name {
+  display: flex;
+  gap: 16px;
+}
+.billing__name input {
+  min-width: 280px;
+  width: 100%;
+}
+.order img {
+  width: 60px;
+  height: 60px;
+}
+.order-form {
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  padding: 24px;
+}
+
+.order-form {
+  max-width: 424px;
+  width: 100%;
 }

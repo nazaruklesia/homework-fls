@@ -20,149 +20,199 @@
       <main class="page">
         <div class="cart">
           <div class="cart__container">
+            <h1 class="cart__title cart__title--hidden">Shopping Cart</h1>
             <form action="#">
-              <div class="form user-form">
-                <div class="billing">
-                  <h2 class="billing__title">Billing Information</h2>
-                  <div class="billing__name">
-                    <div>
-                      <label for="first-name">First name</label>
-                      <input
-                        id="first-name"
-                        type="text"
-                        name="form[]"
-                        placeholder="Your first name"
-                        required
-                      />
+              <div class="box-form">
+                <div class="form user-form">
+                  <div class="billing">
+                    <h2 class="billing__title">Billing Information</h2>
+                    <div class="billing__name">
+                      <div>
+                        <label for="first-name">First name</label>
+                        <input
+                          id="first-name"
+                          type="text"
+                          name="form[]"
+                          placeholder="Your first name"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label for="last-name">Last name</label>
+                        <input
+                          id="last-name"
+                          type="text"
+                          name="form[]"
+                          placeholder="Your last name"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label for="company-name"
+                          >Company Name <span>(optional)</span></label
+                        >
+                        <input
+                          id="company-name"
+                          type="text"
+                          name="form[]"
+                          placeholder="Company name"
+                        />
+                      </div>
                     </div>
-                    <div>
-                      <label for="last-name">Last name</label>
-                      <input
-                        id="last-name"
-                        type="text"
-                        name="form[]"
-                        placeholder="Your last name"
-                        required
-                      />
+
+                    <div class="billing__address">
+                      <div>
+                        <label for="street">Street Address</label>
+                        <input
+                          id="street"
+                          type="text"
+                          name="form[]"
+                          placeholder="Your street address"
+                          required
+                        />
+                      </div>
                     </div>
+
+                    <div class="billing__city">
+                      <div>
+                        <label for="country">Country / Region</label>
+                        <select id="country" name="form[]" required>
+                          <option value="" disabled selected>Select</option>
+                          <option value="Ukraine">Ukraine</option>
+                          <option value="UK">UK</option>
+                          <option value="USA">USA</option></select
+                        ><img src="img/arrow.svg" alt="arrow" />
+                      </div>
+                      <div>
+                        <label for="states">States</label>
+                        <select id="states" name="form[]" required>
+                          <option value="" disabled selected>Select</option>
+                          <option value="Kyiv">Ukraine, Kyiv</option>
+                          <option value="London">UK, London</option>
+                          <option value="Washington">USA, Washington</option>
+                        </select>
+                        <img src="img/arrow.svg" alt="arrow" />
+                      </div>
+                      <div>
+                        <label for="code">Zip Code</label>
+                        <input
+                          id="code"
+                          type="text"
+                          name="form[]"
+                          placeholder="Zip Code"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="billing__contact">
+                      <div>
+                        <label for="email">Email</label>
+                        <input
+                          id="email"
+                          type="email"
+                          name="form[]"
+                          placeholder="Email Address"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label for="phone">Phone</label>
+                        <input
+                          id="phone"
+                          type="tel"
+                          name="form[]"
+                          placeholder="Phone number"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="billing__checkbox">
+                      <input id="checkbox" type="checkbox" name="form[]" />
+                      <label for="checkbox">Ship to a different address</label>
+                    </div>
+                  </div>
+
+                  <div class="additional">
+                    <h2 class="additional__title">Additional Info</h2>
                     <div>
-                      <label for="company-name"
-                        >Company Name <span>(optional)</span></label
+                      <label for="notes"
+                        >Order Notes <span>(Optional)</span></label
                       >
-                      <input
-                        id="company-name"
-                        type="text"
+                      <textarea
+                        id="notes"
+                        autocomplete="off"
                         name="form[]"
-                        placeholder="Company name"
-                      />
+                        placeholder="Notes about your order, e.g. special notes for delivery"
+                      ></textarea>
                     </div>
-                  </div>
-
-                  <div class="billing__address">
-                    <div>
-                      <label for="street">Street Address</label>
-                      <input
-                        id="street"
-                        type="text"
-                        name="form[]"
-                        placeholder="Your street address"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="billing__city">
-                    <div>
-                      <label for="country">Country / Region</label>
-                      <select id="country" name="form[]" required>
-                        <option value="">Select</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label for="states">States</label>
-                      <select id="states" name="form[]" required>
-                        <option value="">Select</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label for="code">Zip Code</label>
-                      <input
-                        id="code"
-                        type="text"
-                        name="form[]"
-                        placeholder="Zip Code"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="billing__contact">
-                    <div>
-                      <label for="email">Email</label>
-                      <input
-                        id="email"
-                        type="email"
-                        name="form[]"
-                        placeholder="Email Address"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label for="phone">Phone</label>
-                      <input
-                        id="phone"
-                        type="tel"
-                        name="form[]"
-                        placeholder="Phone number"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <input id="checkbox" type="checkbox" name="form[]" />
-                    <label for="checkbox">Ship to a different address</label>
                   </div>
                 </div>
 
-                <div class="additional">
-                  <h2 class="additional__title">Additional Info</h2>
-                  <div>
-                    <label for="notes"
-                      >Order Notes <span>(Optional)</span></label
-                    >
-                    <textarea
-                      id="notes"
-                      autocomplete="off"
-                      name="form[]"
-                      placeholder="Notes about your order, e.g. special notes for delivery"
-                    ></textarea>
+                <div class="form order-form">
+                  <div class="order">
+                    <h2 class="order__title order__title--small">
+                      Order Summery
+                    </h2>
+                    <div>
+                      <a href="#">
+                        <img src="img/green.webp" alt="green capsicum"
+                      /></a>
+                      <a href="#">Green Capsicum</a> <span>x</span>
+                      <input type="number" value="1" />
+                      <p>$70.00</p>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <img src="img/red.webp" alt="red capsicum"
+                      /></a>
+                      <a href="#">Red Capsicum</a> <span>x</span>
+                      <input type="number" value="1" />
+                    </div>
+                    <div>
+                      <div>
+                        <p>Subtotal: <span>$84.00</span></p>
+                      </div>
+                      <div>
+                        <p>Shipping: <span>Free</span></p>
+                      </div>
+                      <div>
+                        <p>Total: <span>$84.00</span></p>
+                      </div>
+                    </div>
                   </div>
+
+                  <div class="payment">
+                    <h2 class="payment__title payment__title--small">
+                      Payment Method
+                    </h2>
+                    <div>
+                      <div>
+                        <input id="cash" type="radio" name="payment_method" />
+                        <label for="cash">Cash on Delivery</label>
+                      </div>
+                      <div>
+                        <input
+                          id="paypal"
+                          type="radio"
+                          checked
+                          name="payment_method"
+                        />
+                        <label for="paypal">Paypal</label>
+                      </div>
+                      <div>
+                        <input
+                          id="amazon_pay"
+                          type="radio"
+                          name="payment_method"
+                        />
+                        <label for="amazon_pay">Amazon Pay</label>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit">Place Order</button>
                 </div>
-              </div>
-
-              <div class="form order-form">
-                <div class="order">
-                  <h2 class="order__title">Order Summery</h2>
-                  <div>
-                    <a href="#">
-                      <img src="img/dreen.webp" alt="green capsicum"
-                    /></a>
-                    <a href="#">Green Capsicum</a> <label for="">x</label>
-                    <input type="number" value="1" />
-                    <p>$70.00</p>
-                  </div>
-
-                  <div>
-                    <a href="#">
-                      <img src="img/red.webp" alt="red capsicum"
-                    /></a>
-                    <a href="#">Red Capsicum</a> <label for="">x</label>
-                    <input type="number" value="1" />
-                    <p>$14.00</p>
-                  </div>
-                </div>
-
-                <div class="payment"></div>
               </div>
             </form>
           </div>

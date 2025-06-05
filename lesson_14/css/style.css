@@ -23,44 +23,175 @@ body {
 .wrapper > main {
   flex-grow: 1;
 }
-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-.user-form {
-  max-width: 872px;
-  width: 100%;
-}
+
 .cart {
   padding: 32px 0;
 }
 [class*="__container"] {
-  max-width: 1320px;
+  max-width: 1350px;
   padding: 0px 15px;
   margin: 0 auto;
   width: 100%;
 }
-.title {
-  font-size: 32px;
+
+.box-form {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
-label {
+
+.cart__title--hidden {
+  visibility: hidden;
+}
+[class*="__title"] {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+[class*="title--small"] {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+label:not(.billing__checkbox label) {
   display: block;
+  margin-bottom: 8px;
+}
+input:focus::placeholder {
+  opacity: 0;
+}
+input::placeholder {
+  color: #999;
+  line-height: 1.3;
+}
+.user-form,
+.order-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .user-form input {
+  margin-bottom: 16px;
+}
+.user-form input,
+.billing__city input,
+.billing__city select,
+.additional textarea {
   font-size: 16px;
-  padding: 14px 16px 14px;
+  padding: 14px 16px;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-
-.billing__name {
-  display: flex;
-  gap: 16px;
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid #00b207;
+  box-shadow: 0px 0px 5px 0px rgba(32, 181, 38, 0.32);
 }
-.billing__name input {
+.additional textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.billing__city select {
+  min-height: 49px;
+}
+.billing__name,
+.billing__city {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+.billing__name input,
+.billing__city input,
+.billing__city select {
   min-width: 280px;
   width: 100%;
+  max-height: 49px;
+  height: 100%;
+}
+select {
+  appearance: none;
+}
+select:invalid {
+  color: #999;
+}
+select:valid {
+  color: #1a1a1a;
+}
+
+.billing__contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.billing__checkbox {
+  display: flex;
+  gap: 6px;
+}
+.billing__checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+.billing__contact div {
+  min-width: 428px;
+  width: 100%;
+}
+.billing__city {
+  position: relative;
+}
+#country + img {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  width: 10px;
+  height: 5px;
+  cursor: pointer;
+}
+#states + img {
+  position: absolute;
+  top: 50px;
+  left: 550px;
+  width: 10px;
+  height: 5px;
+  cursor: pointer;
+}
+.billing__checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.billing__checkbox input:hover + label::before {
+  border: 1px solid #00b307;
+  transition: border 0.3s ease;
+}
+.billing__checkbox input:checked + label::before {
+  background-image: url("../img/check-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: #00b207;
+}
+.billing__checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.billing__checkbox label::before {
+  width: 20px;
+  height: 20px;
+  content: "";
+  align-self: flex-start;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.billing__name span,
+.additional span {
+  color: #999;
 }
 .order img {
   width: 60px;

@@ -52,7 +52,7 @@ body {
   font-size: 20px;
   margin-bottom: 16px;
 }
-label:not(.billing__checkbox label) {
+label {
   display: block;
 }
 
@@ -94,6 +94,8 @@ textarea:focus {
 }
 .additional textarea {
   min-height: 100px;
+  max-height: 300px;
+  height: 100%;
   resize: vertical;
 }
 .billing__city select {
@@ -191,6 +193,7 @@ select:valid {
 .payment__item input:hover + label::before {
   border: 1px solid #00b307;
   transition: border 0.3s ease;
+  cursor: pointer;
 }
 .billing__checkbox input:checked + label::before {
   background-image: url("../img/check-white.svg");
@@ -307,26 +310,21 @@ select:valid {
 
 /* Payment Method */
 
-.payment__method {
+.payment {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
-
 .payment__item {
-  display: flex;
-  align-items: center;
-}
-
-.payment__method label {
-  margin-bottom: 0;
-  cursor: pointer;
+  display: inline-block;
+  text-align: start;
 }
 
 .payment__item label::before {
   width: 20px;
   height: 20px;
-  padding: 5px;
+  cursor: pointer;
+
   content: "";
   align-self: flex-start;
   border-radius: 50%;
@@ -334,7 +332,6 @@ select:valid {
   background-color: #ffffff;
   transition: border 0.3s ease;
   margin-right: 6px;
-  cursor: pointer;
 }
 
 .payment__item input:checked + label::before {
@@ -342,4 +339,15 @@ select:valid {
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid #00b207;
+}
+
+.btn-submit {
+  width: 100%;
+  border-radius: 43px;
+  background-color: #00b207;
+  padding: 16px 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
 }

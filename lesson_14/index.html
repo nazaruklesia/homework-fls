@@ -127,12 +127,13 @@
                         />
                       </div>
                     </div>
+                    <!-- billing__checkbox -->
                     <div class="billing__checkbox">
                       <input id="checkbox" type="checkbox" name="form[]" />
                       <label for="checkbox">Ship to a different address</label>
                     </div>
                   </div>
-
+                  <!-- billing__checkbox -->
                   <div class="additional">
                     <h2 class="additional__title">Additional Info</h2>
                     <div>
@@ -220,31 +221,29 @@
                     <h2 class="payment__title payment__title--small">
                       Payment Method
                     </h2>
-                    <div class="payment__method">
-                      <div class="payment__item">
-                        <input id="cash" type="radio" name="payment_method" />
-                        <label for="cash">Cash on Delivery</label>
-                      </div>
-                      <div class="payment__item">
-                        <input
-                          id="paypal"
-                          type="radio"
-                          checked
-                          name="payment_method"
-                        />
-                        <label for="paypal">Paypal</label>
-                      </div>
-                      <div class="payment__item">
-                        <input
-                          id="amazon_pay"
-                          type="radio"
-                          name="payment_method"
-                        />
-                        <label for="amazon_pay">Amazon Pay</label>
-                      </div>
+                    <div class="payment__item">
+                      <input id="cash" type="radio" name="payment_method" />
+                      <label for="cash">Cash on Delivery</label>
+                    </div>
+                    <div class="payment__item">
+                      <input
+                        id="paypal"
+                        type="radio"
+                        checked
+                        name="payment_method"
+                      />
+                      <label for="paypal">Paypal</label>
+                    </div>
+                    <div class="payment__item">
+                      <input
+                        id="amazon_pay"
+                        type="radio"
+                        name="payment_method"
+                      />
+                      <label for="amazon_pay">Amazon Pay</label>
                     </div>
                   </div>
-                  <button type="submit">Place Order</button>
+                  <button class="btn-submit" type="submit">Place Order</button>
                 </div>
               </div>
             </form>

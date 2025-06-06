@@ -2,9 +2,10 @@
 @import url("reset.css");
 
 body {
-  font-family: "Inter", sans-serif;
-  background-color: #ffff;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
   color: #1a1a1a;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -53,8 +54,12 @@ body {
 }
 label:not(.billing__checkbox label) {
   display: block;
+}
+
+.user-form label:not(:last-child) {
   margin-bottom: 8px;
 }
+
 input:focus::placeholder {
   opacity: 0;
 }
@@ -157,12 +162,33 @@ select:valid {
   height: 5px;
   cursor: pointer;
 }
-.billing__checkbox input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+
+/* //////////////////////////////////////// */
+
+.billing__checkbox,
+.payment__item {
+  position: relative;
 }
-.billing__checkbox input:hover + label::before {
+.billing__checkbox input,
+.payment__item input {
+  position: absolute;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+.billing__checkbox input:focus + label::before,
+.payment__item input:focus + label::before,
+.order a:focus {
+  outline: 2px solid #00b307;
+  box-shadow: 0 0 0 3px rgba(0, 179, 7, 0.3);
+  padding: 2px;
+  border-radius: 4px;
+  transition: outline 0.3s ease;
+}
+
+.billing__checkbox input:hover + label::before,
+.payment__item input:hover + label::before {
   border: 1px solid #00b307;
   transition: border 0.3s ease;
 }
@@ -170,7 +196,6 @@ select:valid {
   background-image: url("../img/check-white.svg");
   background-position: center;
   background-repeat: no-repeat;
-
   background-color: #00b207;
 }
 .billing__checkbox label {
@@ -186,24 +211,135 @@ select:valid {
   align-self: flex-start;
   border-radius: 4px;
   border: 1px solid #cccccc;
-  background-color: #fff;
+  background-color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
+
+/* //////////////////////////////////////////// */
+
 .billing__name span,
 .additional span {
   color: #999;
-}
-.order img {
-  width: 60px;
-  height: 60px;
-}
-.order-form {
-  border-radius: 8px;
-  border: 1px solid #e6e6e6;
-  padding: 24px;
 }
 
 .order-form {
   max-width: 424px;
   width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  padding: 24px;
+}
+
+.order img {
+  width: 60px;
+  height: 60px;
+}
+
+.order__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  align-items: center;
+}
+.order__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.order__product {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.order__product input {
+  max-width: 45px;
+  width: 100%;
+  padding: 0 3px;
+}
+
+.order__price {
+  align-items: flex-end;
+}
+
+.order__img-link,
+.order__link {
+  transition: all 0.3s ease-in-out;
+}
+.order__img-link:hover img,
+.order__img-link:focus-visible img {
+  scale: 1.1;
+}
+.order__link:hover {
+  scale: 1.02;
+  text-decoration: underline;
+}
+.order__item--total {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.order__item--total div {
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order__item--total div {
+  color: #4d4d4d;
+  padding: 13px 0;
+}
+
+.order__item--total div:not(:first-child) {
+  border-top: 1px solid #e6e6e6;
+}
+.order__span {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+.order__span--weight {
+  font-size: 18px;
+  font-weight: 600;
+}
+.order__text--weight {
+  font-size: 16px;
+}
+.order__product .order__label {
+  margin-bottom: 0;
+}
+
+/* Payment Method */
+
+.payment__method {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment__item {
+  display: flex;
+  align-items: center;
+}
+
+.payment__method label {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.payment__item label::before {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  content: "";
+  align-self: flex-start;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  transition: border 0.3s ease;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.payment__item input:checked + label::before {
+  background-image: url("../img/circle-checked.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #00b207;
 }

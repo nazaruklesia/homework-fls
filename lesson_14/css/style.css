@@ -60,7 +60,7 @@ label {
   margin-bottom: 8px;
 }
 
-input:focus::placeholder {
+input:focus-visible::placeholder {
   opacity: 0;
 }
 input::placeholder {
@@ -86,12 +86,13 @@ input::placeholder {
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-input:focus,
-select:focus,
-textarea:focus {
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 1px solid #00b207;
   box-shadow: 0px 0px 5px 0px rgba(32, 181, 38, 0.32);
 }
+
 .additional textarea {
   min-height: 100px;
   max-height: 300px;
@@ -135,6 +136,13 @@ select:valid {
 .billing__checkbox {
   display: flex;
   gap: 6px;
+  margin-bottom: 32px;
+}
+.billing::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
 }
 .billing__checkbox input {
   width: 20px;
@@ -228,11 +236,12 @@ select:valid {
 .order-form {
   max-width: 424px;
   width: 100%;
-  border-radius: 8px;
+}
+.form__border {
   border: 1px solid #e6e6e6;
+  border-radius: 8px;
   padding: 24px;
 }
-
 .order img {
   width: 60px;
   height: 60px;
@@ -244,12 +253,11 @@ select:valid {
   gap: 6px;
   align-items: center;
 }
-.order__item:not(:last-child) {
-  margin-bottom: 16px;
-}
+
 .order__product {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 6px;
 }
 .order__product input {
@@ -283,6 +291,7 @@ select:valid {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   align-items: center;
 }
 .order__item--total div {
@@ -310,22 +319,24 @@ select:valid {
 
 /* Payment Method */
 
-.payment {
+/* .payment {
   display: flex;
   flex-direction: column;
   gap: 16px;
+} */
+
+.pay {
+  margin-bottom: 24px;
 }
 .payment__item {
-  display: inline-block;
-  text-align: start;
+  margin-bottom: 10px;
 }
 
 .payment__item label::before {
+  content: "";
   width: 20px;
   height: 20px;
   cursor: pointer;
-
-  content: "";
   align-self: flex-start;
   border-radius: 50%;
   border: 1px solid #cccccc;
@@ -350,4 +361,8 @@ select:valid {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
+}
+.btn-submit:hover {
+  background-color: #2c742f;
+  transition: background-color 0.3s ease;
 }

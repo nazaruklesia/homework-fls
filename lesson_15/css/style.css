@@ -60,3 +60,49 @@ body {
   height: 12px;
   background: url("../icons/arrow.svg") no-repeat center center;
 }
+.products-block__title-box button:hover {
+  text-decoration: underline;
+}
+.products-block__btn button:hover {
+  transition: transform 0.3s;
+  transform: scaleX(1);
+}
+.list-products__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.list-products__items li {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e6e6e6;
+  flex-basis: 264px;
+  flex-shrink: 0;
+  height: 327px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+.list-products__item .list-products__bag {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  stroke: #1a1a1a;
+}
+
+.list-products__item .list-products__bag:hover {
+  background-color: #00b207;
+  stroke: #ffffff;
+}
+.list-products__item .list-products__bag:active {
+  background-color: #2c742f;
+}
+.list-products__item p {
+  color: #1a1a1a;
+}
+.list-products__item span {
+  color: #999999;
+  text-decoration: line-through;
+}

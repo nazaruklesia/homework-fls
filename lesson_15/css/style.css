@@ -46,7 +46,8 @@ body {
   justify-content: space-between;
   gap: 15px;
 }
-.products-block__btn {
+.products-block__btn,
+.post-text__btn {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -55,13 +56,15 @@ body {
   font-style: normal;
   font-weight: 500;
 }
-.products-block__title-box button::after {
+.products-block__title-box button::after,
+.post-text__btn::after {
   content: "";
   width: 15px;
   height: 12px;
   background: url("../icons/arrow.svg") no-repeat center center;
 }
-.products-block__title-box button:hover {
+.products-block__title-box button:hover,
+.post-text__btn:hover {
   text-decoration: underline;
 }
 .products-block__btn button:hover {
@@ -240,20 +243,91 @@ body {
   border: 1px solid #f2f2f2;
 }
 /* <!-- ////////////////////////Latest News//////////////////////////// --> */
+.news-block > *:not(:last-child) {
+  margin-bottom: 23px;
+}
 .news-block__title {
   text-align: center;
 }
 .news-block__items {
+  margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  gap: 24px;
 }
 .item__card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   max-width: 424px;
   width: 100%;
-  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  transition: all 0.4s;
+}
+.item__card:hover,
+.item__card:active {
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
-  border-radius: 8px 8px 0px 0px;
+}
+.item__main-img {
+  flex-shrink: 0;
+}
+.item__article-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px;
+  gap: 15px;
+  justify-content: space-between;
+}
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: start;
+}
+.post-meta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.post-meta a:hover {
+  color: #888888;
+}
+.post-meta__category::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../icons/tag.svg");
+  flex-shrink: 0;
+}
+.post-meta__author::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../icons/user.svg");
+  flex-shrink: 0;
+}
+.post-meta__comments::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../icons/chat.svg");
+  flex-shrink: 0;
+}
+.post-text {
+  transition: all 0.4s;
+}
+.post-text > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.post-text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+.post-text p:hover {
+  color: #2c742f;
+}
+.post-text__btn {
+  font-weight: 600;
 }

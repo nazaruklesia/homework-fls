@@ -85,7 +85,10 @@
               </div>
 
               <a href="#" class="card-products__image-link">
-                <img src="img/apple.webp" alt="apple" />
+                <picture>
+                  <source srcset="img/apple_2x.webp 2x, img/apple_3x.webp 3x" />
+                  <img src="img/apple.webp" alt="apple" />
+                </picture>
               </a>
               <div class="card-products__box-info information-part">
                 <div class="information-part__info">
@@ -163,7 +166,12 @@
               </div>
 
               <a href="#" class="card-products__image-link">
-                <img src="img/orange.webp" alt="orange" />
+                <picture>
+                  <source
+                    srcset="img/orange_2x.webp 2x, img/orange_3x.webp 3x"
+                  />
+                  <img src="img/orange.webp" alt="orange" />
+                </picture>
               </a>
               <div class="card-products__box-info information-part">
                 <div class="information-part__info">
@@ -193,7 +201,6 @@
             <div class="card-products__item">
               <div class="card-products__promo promo-part">
                 <div class="promo-part__sale text-part"></div>
-
                 <div class="promo-part__actions icons-part">
                   <button
                     class="icons-part__btn icons-part__btn--heart"
@@ -241,7 +248,12 @@
               </div>
 
               <a href="#" class="card-products__image-link">
-                <img src="img/cabbage.webp" alt="cabbage" />
+                <picture>
+                  <source
+                    srcset="img/cabbage_2x.webp 2x, img/cabbage__3x.webp 3x"
+                  />
+                  <img src="img/cabbage.webp" alt="cabbage" />
+                </picture>
               </a>
               <div class="card-products__box-info information-part">
                 <div class="information-part__info">
@@ -271,7 +283,6 @@
             <div class="card-products__item">
               <div class="card-products__promo promo-part">
                 <div class="promo-part__sale text-part"></div>
-
                 <div class="promo-part__actions icons-part">
                   <button
                     class="icons-part__btn icons-part__btn--heart"
@@ -319,7 +330,12 @@
               </div>
 
               <a href="#" class="card-products__image-link">
-                <img src="img/lettuce.webp" alt="lettuce" />
+                <picture>
+                  <source
+                    srcset="img/lettuce_2x.webp 2x, img/lettuce_3x.webp 3x"
+                  />
+                  <img src="img/lettuce.webp" alt="lettuce" />
+                </picture>
               </a>
               <div class="card-products__box-info information-part">
                 <div class="information-part__info">
@@ -396,7 +412,12 @@
               </div>
 
               <a href="#" class="card-products__image-link">
-                <img src="img/eggplant.webp" alt="eggplant" />
+                <picture>
+                  <source
+                    srcset="img/eggplant_2x.webp 2x, img/eggplant_3x.webp 3x"
+                  />
+                  <img src="img/eggplant.webp" alt="eggplant" />
+                </picture>
               </a>
               <div class="card-products__box-info information-part">
                 <div class="information-part__info">
@@ -430,18 +451,105 @@
             <h2 class="news-block__title">Latest News</h2>
             <div class="news-block__items item">
               <div class="item__card">
-                <div>
-                  <a href="#"><img src="img/orange_slices.webp" alt="" /></a>
+                <div class="item__main-img">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          img/orange_slices_2x.webp 2x,
+                          img/orange_slices_3x.webp 3x
+                        "
+                      />
+                      <img src="img/orange_slices.webp" alt="orange" />
+                    </picture>
+                  </a>
                 </div>
-                <div></div>
-                <div>
-                  <p>
-                    Curabitur porttitor orci eget neque accumsan venenatis. Nunc
-                    fermentum.
-                  </p>
+                <div class="item__article-info">
+                  <div class="item__meta-post post-meta">
+                    <a class="post-meta__category" href="#">Food</a>
+                    <a class="post-meta__author" href="#"
+                      >By <span>Admin</span></a
+                    >
+                    <a class="post-meta__comments" href="#"
+                      ><span>65</span> Comments</a
+                    >
+                  </div>
+                  <div class="item__text-post post-text">
+                    <p>
+                      Curabitur porttitor orci eget neque accumsan venenatis.
+                      Nunc fermentum.
+                    </p>
+                    <button class="post-text__btn" type="button">
+                      Read More
+                    </button>
+                  </div>
                 </div>
-                <div><button type="button">Read More</button></div>
               </div>
+              <!--  -->
+              <div class="item__card">
+                <div class="item__main-img">
+                  <a href="#">
+                    <picture>
+                      <source srcset="img/agg_2x.webp 2x, img/agg_3x.webp 3x" />
+                      <img src="img/egg.webp" alt="egg" />
+                    </picture>
+                  </a>
+                </div>
+                <div class="item__article-info">
+                  <div class="item__meta-post post-meta">
+                    <a class="post-meta__category" href="#">Food</a>
+                    <a class="post-meta__author" href="#"
+                      >By <span>Admin</span></a
+                    >
+                    <a class="post-meta__comments" href="#"
+                      ><span>65</span> Comments</a
+                    >
+                  </div>
+                  <div class="item__text-post post-text">
+                    <p>Eget lobortis lorem lacinia. Vivamus pharetra semper,</p>
+                    <button class="post-text__btn" type="button">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="item__card">
+                <div class="item__main-img">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          img/vegetables_2x.webp 2x,
+                          img/vegetables_3x.webp 3x
+                        "
+                      />
+                      <img src="img/vegetables.webp" alt="vegetables" />
+                    </picture>
+                  </a>
+                </div>
+                <div class="item__article-info">
+                  <div class="item__meta-post post-meta">
+                    <a class="post-meta__category" href="#">Food</a>
+                    <a class="post-meta__author" href="#"
+                      >By <span>Admin</span></a
+                    >
+                    <a class="post-meta__comments" href="#"
+                      ><span>65</span> Comments</a
+                    >
+                  </div>
+                  <div class="item__text-post post-text">
+                    <p>
+                      Curabitur porttitor orci eget neque accumsan venenatis.
+                      Nunc fermentum.
+                    </p>
+                    <button class="post-text__btn" type="button">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
             </div>
           </div>
 

@@ -28,6 +28,9 @@ body {
 [class*="--padding"] {
   padding: 30px 0;
 }
+[class*="--title-padding"] {
+  padding-bottom: 32px;
+}
 [class*="__container"] {
   max-width: 1350px;
   padding: 0px 15px;
@@ -73,7 +76,10 @@ body {
 }
 .card-products {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-bottom: 15px;
 }
 
 .promo-part {
@@ -105,8 +111,9 @@ body {
   width: 100%;
   padding: 12px;
   margin: 0 -1px -1px 0;
-  flex: 0 0 calc(33.333% + 1px);
+  /* flex: 0 0 calc(33.333% + 1px); */
   transition: all 0.4s;
+  flex: 0 0 264px;
 }
 .card-products__item::before {
   position: absolute;
@@ -130,7 +137,8 @@ body {
 }
 .card-products__image-link {
   background-color: #f2f2f2;
-  flex-grow: 1;
+  aspect-ratio: 254/230;
+  width: 100%;
 }
 
 .information-part {
@@ -138,6 +146,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 }
 
 .detail-add__basket-btn {
@@ -170,9 +179,7 @@ body {
   flex-direction: column;
   align-self: flex-start;
 }
-.information-part__link > * {
-  margin-bottom: 6px;
-}
+
 .detail-add {
   display: flex;
   justify-content: space-between;
@@ -233,6 +240,7 @@ body {
   padding: 10px;
   border-radius: 50%;
   border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
   transition: all 0.4s;
 }
 .icons-part__btn svg,
@@ -252,7 +260,7 @@ body {
 .icons-part__btn:active,
 .icons-part__btn:focus {
   background-color: #00b207;
-  border: none;
+  border: transparent;
 }
 .icons-part__btn--heart:active svg {
   fill: #00b207;
@@ -263,13 +271,14 @@ body {
 }
 
 /* <!-- ////////////////////////Latest News//////////////////////////// --> */
-.news-block > *:not(:last-child) {
+/* .news-block > *:not(:last-child) {
   margin-bottom: 23px;
-}
+} */
 .news-block__title {
   text-align: center;
 }
-.news-block__items {
+
+.item {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -288,6 +297,9 @@ body {
 .item__main-img {
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 424 / 324;
 }
 
 .item__date-label {

@@ -180,7 +180,7 @@ body {
 }
 
 /*  */
-@media (any-hover: hover) {
+@media (any-hover: hover), (pointer: fine) {
   .btn-header__button:hover,
   .hero__content button:hover {
     background-color: #f26422a2;

@@ -5,32 +5,32 @@
 //   console.log(`Пункт № ${i};`);
 // }
 
-if (2 * 20 <= 10 || (30 / 2 < 5 && 10 <= "10") || 20 === "20") {
-  //     false      ||  (false && true) || false)
+// if (2 * 20 <= 10 || (30 / 2 < 5 && 10 <= "10") || 20 === "20") {
+//   //     false      ||  (false && true) || false)
 
-  console.log("yes");
-}
+//   console.log("yes");
+// }
 
 // Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "
 // Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.
 // Функція не має повертати NaN, Infinite або помилку
 
-const calcDivision = (a, b) => {
-  let rezult = a / b;
-  if (isFinite(rezult) && !isNaN(rezult)) {
-    return console.log(`Результат ділення: ${rezult}`);
-  }
-};
-calcDivision(20, 10);
-calcDivision(20, "10");
-calcDivision(100, 0);
-calcDivision(NaN, 3);
-calcDivision(3, 2);
-calcDivision("Text", "text");
-calcDivision(2, 110);
-calcDivision("10", 2);
-calcDivision();
-calcDivision(2);
+// const calcDivision = (a, b) => {
+//   let rezult = a / b;
+//   if (isFinite(rezult) && !isNaN(rezult)) {
+//     return console.log(`Результат ділення: ${rezult}`);
+//   }
+// };
+// calcDivision(20, 10);
+// calcDivision(20, "10");
+// calcDivision(100, 0);
+// calcDivision(NaN, 3);
+// calcDivision(3, 2);
+// calcDivision("Text", "text");
+// calcDivision(2, 110);
+// calcDivision("10", 2);
+// calcDivision();
+// calcDivision(2);
 
 //Створіть масив даних - 5 елементів, один з яких число 10
 //Обробіть масив за допомогою методу перебору
@@ -43,3 +43,46 @@ calcDivision(2);
 //     console.log(`Знайдено число: ${item} з індексом: ${index}`);
 //   }
 // });
+
+// HW23 /////////////////////HW23/////// // HW23/////////////////////////////////  // HW23
+
+// Задача №1
+// Отримати в константу елемент <body>
+
+const bodyElement = document.body;
+console.log(bodyElement);
+
+// Задача №2
+// Написати функцію, яка додає в <body> список UL
+// з певною кількістю LI (кількість має передаватись
+// як параметр функції, також мати значення за замовченням)
+
+function newElement(item = 3) {
+  const body = document.querySelector(`body`);
+  const ul = document.createElement(`ul`);
+
+  for (let i = 0; i <= item; i++) {
+    const li = document.createElement(`li`);
+  }
+}
+
+// Задача №3
+// Додати до елементу <body> класс loaded.
+// Потім перевірити чи є клас loaded у елемента <body>
+// і, якщо є, додати стиль кольору тесту зедлений.
+
+// Задача №4
+// Дано в html: три елементи з класом item.
+// Треба отримати ці елементи в константу, кожному додати клас active,
+// та перезаписати контент всередені кожного елемента
+// на "Елемент №(тут порядковий номер елементу починаючи з 1)".
+
+// Задача №5
+// Дано в html: текст, далі кнопка з класом button.
+// Треба прокрутити скрол сторінки до кнопки
+
+// Задача №6
+// Дано в html: посилання з класом link
+// Треба додати до посилання дата атрибут зі значенням 100
+// Поім отримати значення трибуту, та, якщо значення меньше 200
+// пофарбувати колір тексту посилання в червоний

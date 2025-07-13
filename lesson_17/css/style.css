@@ -96,6 +96,7 @@ body {
 .sale-card--up {
   background-image: url("../img/background.webp");
   aspect-ratio: 248/335;
+  background-color: #e9e9e9fd;
 }
 .sale-card__content {
   display: flex;
@@ -319,6 +320,7 @@ body {
 .sale-card--down {
   background-image: url("../img/background-down.webp");
   aspect-ratio: 312/423;
+  background-color: #e9e9e9fd;
   color: #1a1a1a;
 }
 .sale-card__subtitle--down {
@@ -421,10 +423,13 @@ body {
 }
 
 .blossomia__img-link {
-  flex: 1 0 370px;
+  flex: 1 1 370px;
+  height: 100%;
   width: 100%;
   transition: all 0.4s;
+  background-color: #e9e9e9fd;
 }
+
 .blossomia__info {
   display: flex;
   flex-direction: column;

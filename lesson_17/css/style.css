@@ -588,13 +588,12 @@ body {
     box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.227);
   }
   .blossomia__link-name:hover {
-    scale: 1.05;
-    translate: 5px;
-    box-shadow: 0px 2px 0px 0px rgba(219, 204, 186, 0.596);
+    scale: 1.02;
+    color: #999999;
   }
   .blossomia__btn-more:hover {
     border-color: #999999;
-    scale: 1.05;
+    scale: 1.02;
   }
   .more-btn__action:hover span {
     background-color: transparent;

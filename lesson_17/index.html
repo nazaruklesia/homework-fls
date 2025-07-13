@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carme&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <title>HW17</title>
 </head>
@@ -19,6 +20,7 @@
     <main class="page">
       <div class="page__container">
         <section class="catalog-products">
+          <!-- <h1>title</h1> -->
           <div class="catalog-products__container">
             <div class="catalog-products__title">
               <h3>Products</h3>
@@ -30,7 +32,8 @@
                   <div class="sale-card__title sale-card__title--up">Summer Sale</div>
                   <div class="sale-card__subtitle sale-card__subtitle--up">75% off</div>
 
-                  <button class="sale-card__btn sale-card__btn--up">Shop Now <img src="icons/arrow.svg" alt=""></button>
+                  <button class="sale-card__btn sale-card__btn--up">Shop Now <img src="icons/arrow.svg"
+                      alt="arrow"></button>
                 </div>
               </div>
               <div class="card-products">
@@ -418,7 +421,9 @@
                 <div class="item">
                   <a class="item__link" href="#">
                     <img class="item__img" src="img/capsicum-small.webp" alt="capsicum"> </a>
-                  <div class="item__info"> <a class="item__link-name" href="#">Red Capsicum</a>
+                  <div class="item__info"> <a class="item__link-name" href="#">
+                      <p>Red Capsicum</p>
+                    </a>
                     <div class="item__detail-info">
 
                       <p class="item__price"><strong>$14.99</strong></p>
@@ -608,7 +613,7 @@
                   <div class="sale-card__subtitle sale-card__subtitle--down"> <strong>Save 37%</strong> on
                     Every Order</div>
 
-                  <button class="sale-card__btn">Shop Now <img src="icons/arrow.svg" alt=""></button>
+                  <button class="sale-card__btn">Shop Now <img src="icons/arrow.svg" alt="arrow"></button>
                 </div>
               </div>
             </div>
@@ -616,148 +621,152 @@
         </section>
       </div>
 
+      <section class="page__blossomia ">
+        <div class="page__block blossomia">
+          <!-- <h1>title</h1> -->
+          <div class="blossomia__container">
+            <div class="blossomia__content">
+              <div class="blossomia__main-title">
+                <h2>Catalog of Floral Delights for Every Occasion</h2>
+              </div>
 
-      <div class="page__blossomia blossomia">
-        <div class="blossomia__container">
-          <div class="blossomia__content">
-            <div class="blossomia__main-title">
-              <h2>Catalog of Floral Delights for Every Occasion</h2>
-            </div>
+              <div class="blossomia__card">
+                <div class="blossomia__picture">
+                  <a class="blossomia__img-link" href="#">
+                    <picture>
+                      <source srcset="img/enchanted-petals_2x.webp 2x, img/enchanted-petals_3x.webp 3x" />
+                      <img src="img/enchanted-petals_1x.webp" alt="composition of flowers">
+                    </picture>
+                  </a>
+                </div>
+                <div class="blossomia__description">
+                  <div class="blossomia__info">
+                    <a class="blossomia__link-name" href="#">Enchanted Petals</a>
+                    <p class="blossomia__price">70 Euro</p>
+                  </div>
+                  <div class="blossomia__actions actions">
+                    <button class="actions__favorite" type="button"><img src="icons/like.svg" alt="like"></button>
+                    <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg"
+                        alt="basket"></button>
+                  </div>
+                </div>
+              </div>
 
-            <div class="blossomia__card">
-              <div class="blossomia__picture">
-                <a class="blossomia__img-link" href="#">
-                  <picture>
-                    <source srcset="img/enchanted-petals_2x.webp 2x, img/enchanted-petals_3x.webp 3x" />
-                    <img src="img/enchanted-petals_1x.webp" alt="">
-                  </picture>
-                </a>
-              </div>
-              <div class="blossomia__description">
-                <div class="blossomia__info">
-                  <a class="blossomia__link-name" href="#">Enchanted Petals</a>
-                  <p>70 Euro</p>
+              <div class="blossomia__card">
+                <div class="blossomia__picture">
+                  <a class="blossomia__img-link" href="#">
+                    <picture>
+                      <source srcset="img/floral-harmony_2x.webp 2x, img/floral-harmony_3x.webp 3x" />
+                      <img src="img/floral-harmony_1x.webp" alt="composition of flowers">
+                    </picture>
+                  </a>
                 </div>
-                <div class="blossomia__actions actions">
-                  <button class="actions__favorite" type="button"><img src="icons/like.svg" alt=""></button>
-                  <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg" alt=""></button>
+                <div class="blossomia__description">
+                  <div class="blossomia__info">
+                    <a class="blossomia__link-name" href="#">Floral Harmony</a>
+                    <p class="blossomia__price">80 Euro</p>
+                  </div>
+                  <div class="blossomia__actions actions">
+                    <button class="actions__favorite" type="button"><img src="icons/like.svg" alt="like"></button>
+                    <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg"
+                        alt="basket"></button>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="blossomia__card">
+                <div class="blossomia__picture">
+                  <a class="blossomia__img-link" href="#">
+                    <picture>
+                      <source srcset="img/whispering-meadows_2x.webp 2x, img/whispering-meadows_3x.webp 3x" />
+                      <img src="img/whispering-meadows_1x.webp" alt="composition of flowers">
+                    </picture>
+                  </a>
+                </div>
+                <div class="blossomia__description">
+                  <div class="blossomia__info">
+                    <a class="blossomia__link-name" href="#">Whispering Meadows</a>
+                    <p class="blossomia__price">45 Euro</p>
+                  </div>
+                  <div class="blossomia__actions actions">
+                    <button class="actions__favorite" type="button"><img src="icons/like.svg" alt="like"></button>
+                    <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg"
+                        alt="basket"></button>
+                  </div>
+                </div>
+              </div>
 
-            <div class="blossomia__card">
-              <div class="blossomia__picture">
-                <a class="blossomia__img-link" href="#">
-                  <picture>
-                    <source srcset="img/floral-harmony_2x.webp 2x, img/floral-harmony_3x.webp 3x" />
-                    <img src="img/floral-harmony_1x.webp" alt="">
-                  </picture>
-                </a>
-              </div>
-              <div class="blossomia__description">
-                <div class="blossomia__info">
-                  <a class="blossomia__link-name" href="#">Floral Harmony</a>
-                  <p>80 Euro</p>
+              <div class="blossomia__card">
+                <div class="blossomia__picture">
+                  <a class="blossomia__img-link" href="#">
+                    <picture>
+                      <source srcset="img/springtime-serenade_2x.webp 2x, img/springtime-serenade_3x.webp 3x" />
+                      <img src="img/springtime-serenade_1x.webp" alt="composition of flowers">
+                    </picture>
+                  </a>
                 </div>
-                <div class="blossomia__actions actions">
-                  <button class="actions__favorite" type="button"><img src="icons/like.svg" alt=""></button>
-                  <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg" alt=""></button>
-                </div>
-              </div>
-            </div>
-            <div class="blossomia__card">
-              <div class="blossomia__picture">
-                <a class="blossomia__img-link" href="#">
-                  <picture>
-                    <source srcset="img/whispering-meadows_2x.webp 2x, img/whispering-meadows_3x.webp 3x" />
-                    <img src="img/whispering-meadows_1x.webp" alt="">
-                  </picture>
-                </a>
-              </div>
-              <div class="blossomia__description">
-                <div class="blossomia__info">
-                  <a class="blossomia__link-name" href="#">Whispering Meadows</a>
-                  <p>45 Euro</p>
-                </div>
-                <div class="blossomia__actions actions">
-                  <button class="actions__favorite" type="button"><img src="icons/like.svg" alt=""></button>
-                  <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg" alt=""></button>
+                <div class="blossomia__description">
+                  <div class="blossomia__info">
+                    <a class="blossomia__link-name" href="#">Springtime Serenade</a>
+                    <p class="blossomia__price">65 Euro</p>
+                  </div>
+                  <div class="blossomia__actions actions">
+                    <button class="actions__favorite" type="button"><img src="icons/like.svg" alt="like"></button>
+                    <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg"
+                        alt="basket"></button>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="blossomia__card">
-              <div class="blossomia__picture">
-                <a class="blossomia__img-link" href="#">
-                  <picture>
-                    <source srcset="img/springtime-serenade_2x.webp 2x, img/springtime-serenade_3x.webp 3x" />
-                    <img src="img/springtime-serenade_1x.webp" alt="">
-                  </picture>
-                </a>
+              <div class="blossomia__card">
+                <div class="blossomia__picture">
+                  <a class="blossomia__img-link" href="#">
+                    <picture>
+                      <source srcset="img/serene-bliss_2x.webp 2x, img/serene-bliss_3x.webp 3x" />
+                      <img src="img/serene-bliss_1x.webp" alt="composition of flowers">
+                    </picture>
+                  </a>
+                </div>
+                <div class="blossomia__description">
+                  <div class="blossomia__info">
+                    <a class="blossomia__link-name" href="#">Serene Bliss</a>
+                    <p class="blossomia__price">60 Euro</p>
+                  </div>
+                  <div class="blossomia__actions actions">
+                    <button class="actions__favorite" type="button"><img src="icons/like.svg" alt="like"></button>
+                    <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg"
+                        alt="basket"></button>
+                  </div>
+                </div>
               </div>
-              <div class="blossomia__description">
-                <div class="blossomia__info">
-                  <a class="blossomia__link-name" href="#">Springtime Serenade</a>
-                  <p>65 Euro</p>
+
+              <div class="blossomia__card">
+                <div class="blossomia__picture">
+                  <a class="blossomia__img-link" href="#">
+                    <picture>
+                      <source srcset="img/blooming-splendor_2x.webp 2x, img/blooming-splendor_3x.webp 3x" />
+                      <img src="img/blooming-splendor_1x.webp" alt="composition of flowers">
+                    </picture>
+                  </a>
                 </div>
-                <div class="blossomia__actions actions">
-                  <button class="actions__favorite" type="button"><img src="icons/like.svg" alt=""></button>
-                  <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg" alt=""></button>
+                <div class="blossomia__description">
+                  <div class="blossomia__info">
+                    <a class="blossomia__link-name" href="#">Blooming Splendor</a>
+                    <p class="blossomia__price">50 Euro</p>
+                  </div>
+                  <div class="blossomia__actions actions">
+                    <button class="actions__favorite" type="button"><img src="icons/like.svg" alt="like"></button>
+                    <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg"
+                        alt="basket"></button>
+                  </div>
                 </div>
+              </div>
+              <div class="blossomia__btn-more more-btn">
+                <button class="more-btn__action" type="button"><span>Open More </span></button>
               </div>
             </div>
-
-            <div class="blossomia__card">
-              <div class="blossomia__picture">
-                <a class="blossomia__img-link" href="#">
-                  <picture>
-                    <source srcset="img/serene-bliss_2x.webp 2x, img/serene-bliss_3x.webp 3x" />
-                    <img src="img/serene-bliss_1x.webp" alt="">
-                  </picture>
-                </a>
-              </div>
-              <div class="blossomia__description">
-                <div class="blossomia__info">
-                  <a class="blossomia__link-name" href="#">Serene Bliss</a>
-                  <p>60 Euro</p>
-                </div>
-                <div class="blossomia__actions actions">
-                  <button class="actions__favorite" type="button"><img src="icons/like.svg" alt=""></button>
-                  <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg" alt=""></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="blossomia__card">
-              <div class="blossomia__picture">
-                <a class="blossomia__img-link" href="#">
-                  <picture>
-                    <source srcset="img/blooming-splendor_2x.webp 2x, img/blooming-splendor_3x.webp 3x" />
-                    <img src="img/blooming-splendor_1x.webp" alt="">
-                  </picture>
-                </a>
-              </div>
-              <div class="blossomia__description">
-                <div class="blossomia__info">
-                  <a class="blossomia__link-name" href="#">Blooming Splendor</a>
-                  <p>50 Euro</p>
-                </div>
-                <div class="blossomia__actions actions">
-                  <button class="actions__favorite" type="button"><img src="icons/like.svg" alt=""></button>
-                  <button class="actions__basket" type="button"><img src="icons/shopping-cart.svg" alt=""></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="blossomia__btn-more more-btn">
-              <button class="more-btn__action" type="button"><span>Open More </span></button>
-            </div>
-
           </div>
         </div>
-
-      </div>
-
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__container">footer</div>
@@ -766,8 +775,3 @@
 </body>
 
 </html>
-
-
-
-
-<div><img src="" alt=""><a href=""></a></div>
